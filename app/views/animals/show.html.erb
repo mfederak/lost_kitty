@@ -1,0 +1,5 @@
+<p><%= @animal.name %></p>
+<p><%= @animal.category %></p>
+<p><%= @animal.found_on.strftime("%D") %></p>
+
+<%= link_to "Found", animal_path(@animal), method: :delete %>

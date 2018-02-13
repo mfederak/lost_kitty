@@ -1,0 +1,13 @@
+<%= form_for(@animal) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :category %>
+  <!-- permet de construire une dropdown (.select) -->
+  <%= f.select :category, Animal::CATEGORY, prompt: "Choose a category" %>
+
+  <%= f.label :found_on %>
+  <%= f.date_field :found_on %>
+
+  <%= f.submit %>
+<% end %>
